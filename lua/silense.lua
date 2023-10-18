@@ -58,10 +58,10 @@ function M.setup(opts)
     local green = "#afd75f"
     local blue = "#87afff"
 
-    api.set_hl(0, "Error", { fg = red })
-    api.set_hl(0, "Warning", { fg = yellow })
-    api.set_hl(0, "Information", { fg = blue })
-    api.set_hl(0, "Hint", { fg = green })
+    api.nvim_set_hl(0, "Error", { fg = red })
+    api.nvim_set_hl(0, "Warning", { fg = yellow })
+    api.nvim_set_hl(0, "Information", { fg = blue })
+    api.nvim_set_hl(0, "Hint", { fg = green })
 
     -- Background
     Color.new("base03", "#585858")
