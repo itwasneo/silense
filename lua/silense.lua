@@ -1,6 +1,7 @@
 local cmd = vim.cmd
 local fn = vim.fn
 local cb = require("colorbuddy.init")
+local set_hl = vim.api.nvim_set_hl
 
 -- Options
 local defaults = {
@@ -42,6 +43,26 @@ function M.setup(opts)
     local groups = M.groups
     local styles = M.styles
 
+    local base03 = "#585858"
+    local base02 = "#444444"
+    local base01 = "#262626"
+    local base00 = "#080808"
+
+    local base3 = "#005f00"
+    local base2 = "#626262"
+    local base1 = "#9e9e9e"
+    local base0 = "#bcbcbc"
+
+    local yellow = "#d7af00"
+    local red = "#d70000"
+    local green = "#afd75f"
+    local blue = "#87afff"
+
+    set_hl(0, "Error", { fg = red })
+    set_hl(0, "Warning", { fg = yellow })
+    set_hl(0, "Information", { fg = blue })
+    set_hl(0, "Hint", { fg = green })
+
     -- Background
     Color.new("base03", "#585858")
     Color.new("base02", "#444444")
@@ -60,10 +81,10 @@ function M.setup(opts)
     Color.new("green", "#afd75f")
     Color.new("blue", "#87afff")
 
-    Group.new("Error", colors.red)
-    Group.new("Warning", colors.yellow)
-    Group.new("Information", colors.blue)
-    Group.new("Hint", colors.green)
+    -- Group.new("Error", colors.red)
+    -- Group.new("Warning", colors.yellow)
+    -- Group.new("Information", colors.blue)
+    -- Group.new("Hint", colors.green)
 
     local bg_color = colors.base00
 
