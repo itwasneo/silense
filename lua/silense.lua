@@ -255,6 +255,15 @@ function M.setup(opts)
     Group.link("TSType", groups.Type)
     Group.link("TSTypeBuiltin", groups.Type)
 
+    -- Telescope
+    Group.new("TelescopeMatching", colors.red, groups.Special, groups.Special, groups.Special)
+    Group.new("TelescopeBorder", colors.base01)       -- float border not quite dark enough, maybe that needs to change?
+    Group.new("TelescopePromptBorder", colors.base1)  -- active border lighter for clarity
+    Group.new("TelescopeTitle", groups.Normal)        -- separate them from the border a little, but not make them pop
+    Group.new("TelescopePromptPrefix", groups.Normal) -- default is groups.Identifier
+    Group.link("TelescopeSelection", groups.CursorLine)
+    Group.new("TelescopeSelectionCaret", colors.yellow)
+
     -- Diagnostics
     Group.link("DiagnosticError", groups.Error)
     Group.new("DiagnosticWarn", colors.yellow)
