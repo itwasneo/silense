@@ -5,6 +5,8 @@ local cb = require("colorbuddy.init")
 -- Options
 local defaults = {
     comment_italics = true,
+    background_set = false,
+    background_color = cb.Color.none,
 }
 
 local M = {
@@ -65,10 +67,14 @@ function M.setup(opts)
     Group.new("Information", colors.blue)
     Group.new("Hint", colors.green)
 
+    if opts["background_set"] and opts["background_color"] == Color.none then
+        opts["background_color"] = colors.base03
+    end
+
     local bg_color = colors.base00
 
     Group.new("Normal", colors.base0, bg_color)
-    Group.new("NormalFloat", colors.base0, bg_color)
+    Group.new("NormalFloat", colors.base0, not opts["background_set"] and Color.none or colors.base02)
     Group.new("NormalNC", colors.base0:dark(), bg_color)
 
     Group.new("Comment", colors.base3, colors.none, opts.comment_italics and styles.italic or styles.NONE)
