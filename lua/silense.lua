@@ -1,7 +1,7 @@
 local cmd = vim.cmd
 local fn = vim.fn
 local cb = require("colorbuddy.init")
-local set_hl = vim.api.nvim_set_hl
+local api = vim.api
 
 -- Options
 local defaults = {
@@ -58,10 +58,10 @@ function M.setup(opts)
     local green = "#afd75f"
     local blue = "#87afff"
 
-    set_hl(0, "Error", { fg = red })
-    set_hl(0, "Warning", { fg = yellow })
-    set_hl(0, "Information", { fg = blue })
-    set_hl(0, "Hint", { fg = green })
+    api.set_hl(0, "Error", { fg = red })
+    api.set_hl(0, "Warning", { fg = yellow })
+    api.set_hl(0, "Information", { fg = blue })
+    api.set_hl(0, "Hint", { fg = green })
 
     -- Background
     Color.new("base03", "#585858")
