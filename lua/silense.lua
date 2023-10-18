@@ -20,6 +20,7 @@ function M.setup(opts)
         end
     end
 
+
     if vim.g.colors_name then
         cmd("hi clear")
     end
@@ -37,7 +38,7 @@ function M.setup(opts)
     local base00 = "#080808"
 
     -- Text
-    local base3 = "#005f00"
+    local base3 = "#005f5f"
     local base2 = "#626262"
     local base1 = "#9e9e9e"
     local base0 = "#bcbcbc"
@@ -78,6 +79,7 @@ function M.setup(opts)
     set_hl(0, "GitSignsChangeNr", { fg = yellow })
     set_hl(0, "GitSignsDeleteLn", { fg = red })
     set_hl(0, "GitSignsDeleteNr", { fg = red })
+    set_hl(0, "SignColumn", { bg = bg_color })
     set_hl(0, "GitSignsCurrentLineBlame", { link = "Comment" })
 
     set_hl(0, "Directory", { fg = base0 })
@@ -179,13 +181,13 @@ function M.setup(opts)
     set_hl(0, "Conditional", { link = "Statement" })
     set_hl(0, "Debug", { link = "Special" })
     set_hl(0, "Define", { link = "PreProc" })
-    set_hl(0, "Include", { link = "Preproc" })
+    set_hl(0, "Include", { link = "PreProc" })
     set_hl(0, "Delimiter", { link = "Special" })
     set_hl(0, "Exception", { link = "Statement" })
     set_hl(0, "Float", { link = "Constant" })
     set_hl(0, "Keyword", { link = "Statement" })
     set_hl(0, "Label", { link = "Statement" })
-    set_hl(0, "Macro", { link = "Statement" })
+    set_hl(0, "Macro", { link = "PreProc" })
     set_hl(0, "Number", { link = "Constant" })
     set_hl(0, "Operator", { link = "Special" })
     set_hl(0, "Repeat", { link = "Statement" })
