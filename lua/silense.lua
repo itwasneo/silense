@@ -261,7 +261,7 @@ function M.setup(opts)
     Group.new("TelescopePromptBorder", colors.base1)  -- active border lighter for clarity
     Group.new("TelescopeTitle", groups.Normal)        -- separate them from the border a little, but not make them pop
     Group.new("TelescopePromptPrefix", groups.Normal) -- default is groups.Identifier
-    Group.link("TelescopeSelection", groups.CursorLine)
+    Group.link("TelescopeSelection", groups.Normal)
     Group.new("TelescopeSelectionCaret", colors.yellow)
 
     -- Diagnostics
