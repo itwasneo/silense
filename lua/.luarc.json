@@ -1,0 +1,34 @@
+{
+    "workspace.checkThirdParty": false,
+    "diagnostics.globals": [
+        "vim",
+        "ngx"
+    ],
+    "workspace.library": [
+        "/home/itwasneo/.config/nvim",
+        "/home/itwasneo/.local/share/nvim/site",
+        "/home/itwasneo/.local/share/nvim/lazy/lazy.nvim",
+        "/home/itwasneo/.local/share/nvim/lazy/cmp-nvim-lsp",
+        "/home/itwasneo/.local/share/nvim/lazy/nvim-lspconfig",
+        "/home/itwasneo/.local/share/nvim/lazy/nvim-ts-autotag",
+        "/home/itwasneo/.local/share/nvim/lazy/nvim-treesitter-textobjects",
+        "/home/itwasneo/.local/share/nvim/lazy/nvim-treesitter",
+        "/home/itwasneo/.local/share/nvim/lazy/Comment.nvim",
+        "/home/itwasneo/.local/share/nvim/lazy/nvim-autopairs",
+        "/home/itwasneo/.local/share/nvim/lazy/mason-lspconfig.nvim",
+        "/home/itwasneo/.local/share/nvim/lazy/mason.nvim",
+        "/home/itwasneo/.local/share/nvim/lazy/telescope-fzf-native.nvim",
+        "/home/itwasneo/.local/share/nvim/lazy/telescope-file-browser.nvim",
+        "/home/itwasneo/.local/share/nvim/lazy/plenary.nvim",
+        "/home/itwasneo/.local/share/nvim/lazy/telescope.nvim",
+        "/home/itwasneo/.local/share/nvim/lazy/nvim-web-devicons",
+        "/home/itwasneo/.local/share/nvim/lazy/colorbuddy.nvim",
+        "/home/itwasneo/.local/share/nvim/lazy/neosolarized.nvim",
+        "/usr/share/nvim/runtime",
+        "/usr/share/nvim/runtime/pack/dist/opt/matchit",
+        "/usr/lib/nvim",
+        "/home/itwasneo/.local/state/nvim/lazy/readme",
+        "/home/itwasneo/.local/share/nvim/lazy/cmp-nvim-lsp/after",
+        "${3rd}/OpenResty/library"
+    ]
+}
