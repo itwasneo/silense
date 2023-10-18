@@ -71,7 +71,7 @@ function M.setup(opts)
     Group.new("NormalFloat", colors.base0, bg_color)
     Group.new("NormalNC", colors.base0:dark(), bg_color)
 
-    Group.new("Comment", colors.base3, colors.none, opts.comment_italics and styles.italic or styles.NONE)
+    Group.new("Comment", colors.base02, colors.none, opts.comment_italics and styles.italic or styles.NONE)
     Group.new("Constant", colors.base1)
 
     -- Git
