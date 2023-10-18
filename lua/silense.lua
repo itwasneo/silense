@@ -124,8 +124,8 @@ function M.setup(opts)
     set_hl(0, "SpellLocal", { undercurl = true, sp = yellow })
 
     -- Status Line
-    set_hl(0, "StatusLine", { bg = bg_color, fg = green, reverse = true })
-    set_hl(0, "StatusLineNC", { bg = bg_color, fg = base2, reverse = true })
+    set_hl(0, "StatusLine", { fg = bg_color, bg = green, reverse = true })
+    set_hl(0, "StatusLineNC", { fg = bg_color, bg = base2, reverse = true })
 
     set_hl(0, "Strikethrough", { fg = base0, strikethrough = true })
 
@@ -240,8 +240,8 @@ function M.setup(opts)
 
     -- Telescope
     set_hl(0, "TelescopeMatching", { fg = red })
-    set_hl(0, "TelescopeBorder", { fg = base0 })            -- float border not quite dark enough, maybe that needs to change?
-    set_hl(0, "TelescopePromptBorder", { fg = base0 })      -- active border lighter for clarity
+    set_hl(0, "TelescopeBorder", { fg = base2 })            -- float border not quite dark enough, maybe that needs to change?
+    set_hl(0, "TelescopePromptBorder", { fg = base2 })      -- active border lighter for clarity
     set_hl(0, "TelescopeTitle", { link = "Normal" })        -- separate them from the border a little, but not make them pop
     set_hl(0, "TelescopePromptPrefix", { link = "Normal" }) -- default is groups.Identifier
     set_hl(0, "TelescopeSelection", { link = "Normal" })
