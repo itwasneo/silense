@@ -68,7 +68,7 @@ function M.setup(opts)
     Group.new("Hint", colors.green)
 
     if opts["background_set"] and opts["background_color"] == Color.none then
-        opts["background_color"] = colors.base03
+        opts["background_color"] = colors.base00
     end
 
     local bg_color = colors.base00
@@ -276,6 +276,10 @@ function M.setup(opts)
     Group.new("DiagnosticVirtualTextHint", colors.base02, colors.none, styles.none)
     Group.new("DiagnosticUnnecessary", colors.base02, colors.none, styles.none)
     Group.link("DiagnosticTextWarn", groups.WarningMsg)
+
+    -- Noice
+    Group.link("NotifyBackground", groups.NormalFloat)
+    Group.link("NoiceCmdlinePopupBorder", groups.FloatBorder)
 end
 
 return M
