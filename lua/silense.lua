@@ -32,22 +32,23 @@ function M.setup(opts)
     vim.g.colors_name = "silense"
 
     -- Background
-    local base03 = "#585858"
-    local base02 = "#444444"
-    local base01 = "#262626"
-    local base00 = "#080808"
+    local base03      = "#585858"
+    local base02      = "#444444"
+    local base01      = "#262626"
+    local base00      = "#080808"
 
     -- Text
-    local base3 = "#008787"
-    local base2 = "#626262"
-    local base1 = "#9e9e9e"
-    local base0 = "#bcbcbc"
+    local base4       = "#5f0000"
+    local base3       = "#008787"
+    local base2       = "#626262"
+    local base1       = "#9e9e9e"
+    local base0       = "#bcbcbc"
 
     -- Misc
-    local yellow = "#d7ff00"
-    local red = "#d70000"
-    local green = "#5fd75f"
-    local blue = "#87afff"
+    local yellow      = "#d7ff00"
+    local red         = "#d70000"
+    local green       = "#5fd75f"
+    local blue        = "#87afff"
 
     set_hl(0, "Error", { fg = red })
     set_hl(0, "Warning", { fg = yellow })
@@ -95,7 +96,7 @@ function M.setup(opts)
     set_hl(0, "MoreMsg", { fg = blue })
     set_hl(0, "ModeMsg", { fg = blue })
     set_hl(0, "NonText", { fg = base0, bold = true })
-    set_hl(0, "PreProc", { fg = red })
+    set_hl(0, "PreProc", { fg = base4 })
 
     -- Pop up Menu
     set_hl(0, "Pmenu", { link = "Normal", bg = base00 })               -- popup menu normal item
@@ -251,13 +252,13 @@ function M.setup(opts)
 
     -- Diagnostics
     set_hl(0, "DiagnosticError", { link = "Error" })
-    set_hl(0, "DiagnosticWarn", { fg = yellow })
-    set_hl(0, "DiagnosticInfo", { fg = blue })
-    set_hl(0, "DiagnosticHint", { fg = green })
-    set_hl(0, "DiagnosticUnderlineError", { fg = red })
-    set_hl(0, "DiagnosticUnderlineWarn", { fg = red })
-    set_hl(0, "DiagnosticUnderlineInfo", { fg = red })
-    set_hl(0, "DiagnosticUnderlineHint", { fg = red })
+    set_hl(0, "DiagnosticWarn", { link = "Warn" })
+    set_hl(0, "DiagnosticInfo", { link = "Informaton" })
+    set_hl(0, "DiagnosticHint", { link = "Hint" })
+    set_hl(0, "DiagnosticUnderlineError", { fg = red, undercurl = true })
+    set_hl(0, "DiagnosticUnderlineWarn", { fg = red, underline = true })
+    set_hl(0, "DiagnosticUnderlineInfo", { fg = red, underline = true })
+    set_hl(0, "DiagnosticUnderlineHint", { fg = red, underline = true })
     set_hl(0, "DiagnosticVirtualTextHint", { fg = base02 })
     set_hl(0, "DiagnosticUnnecessary", { fg = base02 })
     set_hl(0, "DiagnosticTextWarn", { link = "WarningMsg" })
