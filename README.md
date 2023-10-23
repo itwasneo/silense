@@ -16,9 +16,9 @@ No buddy, no dependency, opiniated, personal color-scheme
 ```
 `set_background = false` means that silense won't change your
 
-    - Normal
-    - NormalFloat
-    - NormalNC
+- Normal
+- NormalFloat
+- NormalNC
 
 highlight groups' background color. This way you can set transparent
 backgrounds.
