@@ -4,6 +4,7 @@ local set_hl = vim.api.nvim_set_hl
 
 -- Options
 local defaults = {
+    set_background = true,
     comment_italics = true,
 }
 
@@ -57,9 +58,15 @@ function M.setup(opts)
 
     local bg_color = base00
 
-    set_hl(0, "Normal", { fg = base0, bg = bg_color })
-    set_hl(0, "NormalFloat", { fg = base0, bg = bg_color })
-    set_hl(0, "NormalNC", { fg = base0, bg = bg_color })
+    if opts.set_background then
+        set_hl(0, "Normal", { fg = base0, bg = bg_color })
+        set_hl(0, "NormalFloat", { fg = base0, bg = bg_color })
+        set_hl(0, "NormalNC", { fg = base0, bg = bg_color })
+    else
+        set_hl(0, "Normal", { fg = base0, bg = "" })
+        set_hl(0, "NormalFloat", { fg = base0, bg = "" })
+        set_hl(0, "NormalNC", { fg = base0, bg = "" })
+    end
     -- Group.new("NormalNC", colors.base0:dark(), bg_color)
 
     set_hl(0, "Comment", { fg = base02, italic = opts.comment_italics or false })
