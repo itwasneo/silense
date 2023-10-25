@@ -256,6 +256,8 @@ function M.setup(opts)
     set_hl(0, "TelescopePromptPrefix", { link = "Normal" }) -- default is groups.Identifier
     set_hl(0, "TelescopeSelection", { link = "Normal" })
     set_hl(0, "TelescopeSelectionCaret", { fg = yellow })
+    set_hl(0, "TelescopeResultsDiffChange", { link = "Normal" })
+    set_hl(0, "TelescopeResultsLineNr", { link = "Normal" })
 
     -- Diagnostics
     set_hl(0, "DiagnosticError", { link = "Error" })
