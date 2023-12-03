@@ -273,7 +273,7 @@ function M.setup(opts)
     set_hl(0, "DiagnosticTextWarn", { link = "WarningMsg" })
 
     -- Notify
-    set_hl(0, "NotifyBackground", { link = "NormalFloat" })
+    set_hl(0, "NotifyBackground", { bg = "#000000" })
 end
 
 return M
