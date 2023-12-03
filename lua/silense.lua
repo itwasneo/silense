@@ -271,6 +271,9 @@ function M.setup(opts)
     set_hl(0, "DiagnosticVirtualTextHint", { fg = base02 })
     set_hl(0, "DiagnosticUnnecessary", { fg = base02 })
     set_hl(0, "DiagnosticTextWarn", { link = "WarningMsg" })
+
+    -- Notify
+    set_hl(0, "NotifyBackground", { link = "NormalFloat" })
 end
 
 return M
