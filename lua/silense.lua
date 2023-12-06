@@ -103,7 +103,7 @@ function M.setup(opts)
     set_hl(0, "MoreMsg", { fg = blue })
     set_hl(0, "ModeMsg", { fg = blue })
     set_hl(0, "NonText", { fg = base0, bold = true })
-    set_hl(0, "PreProc", { fg = base4 })
+    set_hl(0, "PreProc", { fg = yellow })
 
     -- Pop up Menu
     set_hl(0, "Pmenu", { link = "Normal", bg = base00 })               -- popup menu normal item
