@@ -120,7 +120,7 @@ function M.setup(opts)
     -- Cursor and Line
     set_hl(0, "LineNr", { link = "Normal" })
     set_hl(0, "CursorLine", { bg = base01, sp = base1 })
-    set_hl(0, "CursorLineNr", { fg = base1, bold = true })
+    set_hl(0, "CursorLineNr", { fg = base4 })
     set_hl(0, "ColorColumn", { bg = base01 })
     set_hl(0, "Cursor", { fg = base03, bg = base0 })
     set_hl(0, "lCursor", { link = "Cursor" })
