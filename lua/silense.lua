@@ -118,7 +118,7 @@ function M.setup(opts)
     set_hl(0, "SpecialKey", { fg = base00, bg = base01, bold = true })
 
     -- Cursor and Line
-    set_hl(0, "LineNr", { fg = base02, bg = bg_color })
+    set_hl(0, "LineNr", { link = "Normal" })
     set_hl(0, "CursorLine", { bg = base01, sp = base1 })
     set_hl(0, "CursorLineNr", { fg = base1, bold = true })
     set_hl(0, "ColorColumn", { bg = base01 })
