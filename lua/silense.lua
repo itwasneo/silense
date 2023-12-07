@@ -87,7 +87,7 @@ function M.setup(opts)
     set_hl(0, "GitSignsChangeNr", { fg = yellow })
     set_hl(0, "GitSignsDeleteLn", { fg = red })
     set_hl(0, "GitSignsDeleteNr", { fg = red })
-    set_hl(0, "SignColumn", { bg = bg_color })
+    set_hl(0, "SignColumn", { bg = "" })
     set_hl(0, "GitSignsCurrentLineBlame", { link = "Comment" })
 
     set_hl(0, "Directory", { fg = base0 })
