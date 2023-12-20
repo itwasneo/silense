@@ -34,7 +34,7 @@ function M.setup(opts)
 
     -- Background
     local base03      = "#585858"
-    local base02      = "#444444"
+    local base02      = "#006600"
     local base01      = "#262626"
     local base00      = "#121212"
 
