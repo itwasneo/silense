@@ -46,9 +46,9 @@ function M.setup(opts)
     local base0       = "#bcbcbc"
 
     -- Misc
-    local yellow      = "#d7d700"
+    local yellow      = "#ffff5f"
     local red         = "#d70000"
-    local green       = "#5fd75f"
+    local green       = "#87d75f"
     local blue        = "#87afff"
 
     set_hl(0, "Error", { fg = red })
