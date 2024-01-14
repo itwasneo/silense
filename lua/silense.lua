@@ -43,7 +43,7 @@ function M.setup(opts)
     local base03      = "#a69494"
     local base02      = "#a69494"
     local base01      = "#514747"
-    local base00      = "#372f2f"
+    local base00      = "#171421"
 
     -- Text
     local base4       = "#af5f87"
