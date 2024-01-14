@@ -41,16 +41,16 @@ function M.setup(opts)
     local base05      = "#e66161"
     local base04      = "#ffa183"
     local base03      = "#a69494"
-    local base02      = "#006600"
+    local base02      = "#a69494"
     local base01      = "#514747"
     local base00      = "#372f2f"
 
     -- Text
     local base4       = "#af5f87"
-    local base3       = "#008787"
+    local base3       = "#6eb06e"
     local base2       = "#626262"
     local base1       = "#9e9e9e"
-    local base0       = "#bcbcbc"
+    local base0       = "#e3e4e5"
 
     -- Misc
     local yellow      = "#ffff5f"
