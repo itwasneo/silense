@@ -38,8 +38,10 @@ function M.setup(opts)
     --local base01      = "#262626"
     --local base00      = "#121212"
 
+    local base05      = "#e66161"
+    local base04      = "#ffa183"
     local base03      = "#a69494"
-    local base02      = "#a69494"
+    local base02      = "#006600"
     local base01      = "#514747"
     local base00      = "#372f2f"
 
@@ -108,7 +110,7 @@ function M.setup(opts)
     set_hl(0, "MoreMsg", { fg = blue })
     set_hl(0, "ModeMsg", { fg = blue })
     set_hl(0, "NonText", { fg = base0, bold = true })
-    set_hl(0, "PreProc", { fg = yellow })
+    set_hl(0, "PreProc", { fg = base05 })
 
     -- Pop up Menu
     set_hl(0, "Pmenu", { link = "Normal", bg = base00 })               -- popup menu normal item
@@ -118,8 +120,8 @@ function M.setup(opts)
 
     set_hl(0, "Question", { fg = red, bold = true })
     set_hl(0, "Search", { fg = yellow, reverse = true })
-    set_hl(0, "Statement", { fg = yellow })
-    set_hl(0, "Special", { fg = base2 })
+    set_hl(0, "Statement", { fg = base04 })
+    set_hl(0, "Special", { fg = base04 })
     set_hl(0, "SpecialKey", { fg = base00, bg = base01, bold = true })
 
     -- Cursor and Line
