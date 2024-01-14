@@ -38,8 +38,6 @@ function M.setup(opts)
     --local base01      = "#262626"
     --local base00      = "#121212"
 
-    local base03      = "#a69494"
-    local base02      = "#a69494"
     local base01      = "#514747"
     local base00      = "#372f2f"
 
